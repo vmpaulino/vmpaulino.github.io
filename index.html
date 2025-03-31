@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@4.0.20/dist/fullpage.min.css">
+
   <style>
     body, html {
       margin: 0;
@@ -46,6 +47,32 @@
       font-size: 0.8rem;
       margin: 2px 5px 5px 0;
     }
+    .carousel-inner {
+      max-width: 800px;  /* or 800px, tweak as you like */
+      margin: 0 auto;
+    }
+    .company-card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    .company-card img {
+      max-width: 180px;
+      max-height: 100px;
+      object-fit: contain;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      padding: 10px;
+    }
+     
     footer {
       background: #f1f1f1;
       padding: 20px;
@@ -65,19 +92,275 @@
         <a href="https://www.linkedin.com/in/vpaulino/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://twitter.com/vmpaulino" target="_blank"><i class="fab fa-twitter"></i></a>
       </div>
-      <p class="lead px-4">Hi there! Thanks for visiting. This is my presentation page, serving as an introduction to me as a Software Engineer.</p>
+      <p class="lead px-4 text-center">
+        Welcome, and thank you for stopping by!<br>
+        This page offers a glimpse into my journey as a Software Engineer — 
+        a space where I share who I am, what I’ve worked on, and how I contribute to building great software.
+      </p>
+      
     </div>
 
     <!-- Bio -->
     <div class="section bg-light-gray">
       <div class="container">
         <h2>About Me</h2>
-        <p>I’m a seasoned Software Engineer with nearly 15 years of experience designing, developing, testing, and deploying distributed backend applications—mainly using .NET, Java, and JavaScript tech stacks.</p> 
-        <p>My journey has taken me through consultancy, product development, R&D, and enterprise support—giving me a well-rounded perspective on software challenges and solutions. Over the years, I’ve worn many hats, including Software Developer, Senior Developer, Tech Lead, Systems Architect, and Scrum Master. </p>
-        <p>Throughout my career, I’ve helped build and mentor high-performing teams, led key tech initiatives, and thrived in roles like Engineering Manager, Technical Lead, and Senior Software Engineer. I specialize in bridging the gap between product and engineering teams, making sure everyone moves toward the same goal 🎯. </p>
-        <p>My experience at Microsoft—where I handled over 200 high-severity cases for the top 500 enterprise customers—sharpened my problem-solving skills and reinforced a strong customer-first mindset. From Waterfall to Agile, and now BizDevOps, I’ve embraced various methodologies with a focus on software craftsmanship.</p>
-        <p>I’m a strong advocate of Agile Architecture, SOLID principles, TDD, and design patterns (GoF), ensuring clean, maintainable, and scalable systems. Above all, I value learning, coaching, and collaboration 🤝. I believe in lifting others while delivering value—whether that’s through mentoring, code reviews, or simply sharing knowledge. </p>
-        <p>I’m currently working as a contractor, bringing all this experience to help teams build reliable, high-quality software 🚀.</p>
+        <p>I’m a seasoned Software Engineer with nearly 15 years of experience designing, developing, testing, and deploying distributed backend applications—mainly using .NET, Java, and JavaScript tech stacks. My journey has taken me through consultancy, product development, R&D, and enterprise support—giving me a well-rounded perspective on software challenges and solutions.</p>
+        <p>Over the years, I’ve worn many hats, including Software Developer, Senior Developer, Tech Lead, Systems Architect, and Scrum Master. I’ve led high-performing teams and worked as an Engineering Manager, Technical Lead, and Senior Software Engineer.</p>
+        <p>At Microsoft, I handled over 200 high-severity cases for top enterprise customers, sharpening my problem-solving skills. I’m a strong advocate of Agile Architecture, SOLID principles, TDD, and design patterns. Above all, I value learning, coaching, and collaboration.</p>
+       
+          <div id="companyCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="company-card">
+                  <img src="https://www.europ-assistance.pt/sites/all/themes/ea_ebiz/logo.png" alt="Europ Assistance Portugal">
+                  <div>
+                    <h5>Software Engineering Lead at Europ Assistance Portugal</h5>
+                    <p>
+                      <strong>Project 1: Uber and Bolt Integration APIs</strong><br>
+                      Led the development and integration of APIs for Uber and Bolt, ensuring seamless communication and data exchange. Managed a cross-functional team using Scrum and drove project success.<br><br>
+              
+                      <strong>Project 2: Service Provider Management Backend and Backoffice</strong><br>
+                      Directed the design and development of a robust orchestration backend integrated with Gestow APIs, leading a team of 4 from architecture through deployment.<br><br>
+              
+                      Additionally, contributed to organization-wide SDLC standards, reviewed code, provided architecture guidance, and collaborated directly with stakeholders and partners to align delivery with business needs.
+                    </p>
+                    <small>Sep 2023 – Jul 2024 · 11 mos</small>
+                    <div>
+                      <span class="tag">.NET 8</span>
+                      <span class="tag">C#</span>
+                      <span class="tag">Blazor</span>
+                      <span class="tag">EF Core 8</span>
+                      <span class="tag">Azure DevOps</span>
+                      <span class="tag">RabbitMQ</span>
+                      <span class="tag">Windows Services</span>
+                      <span class="tag">Scrum</span>
+                      <span class="tag">Architecture</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="company-card">
+                  <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft">
+                  <div>
+                    <h5>Developer Support Engineer at Microsoft</h5>
+                    <p>
+                      Provided expert-level support for over 200 technical cases (including 50 escalations) involving IIS, WCF, ASP.NET, and SignalR — among Microsoft’s top enterprise clients. Delivered root-cause analysis and resolution for critical incidents within SLA, collaborating across teams.<br><br>
+                      
+                      Leveraged advanced tools like <strong>WinDbg</strong> (with MEX, SOSEX, NetExt), <strong>PerfView</strong>, and log diagnostics to solve complex server-side issues in ASP.NET and WCF applications. Diagnosed performance bottlenecks, scalability issues, and security vulnerabilities, delivering effective action plans.<br><br>
+                      
+                      Authored technical documentation, KBs, and best practices. Mentored junior engineers, significantly raising the support team's effectiveness within 3 months. Maintained a strong customer-first mindset while contributing to internal knowledge initiatives.
+                    </p>
+                    <small>Feb 2022 – Sep 2023 · 1 yr 8 mos</small>
+                    <div>
+                      <span class="tag">.NET</span>
+                      <span class="tag">IIS</span>
+                      <span class="tag">WCF</span>
+                      <span class="tag">ASP.NET</span>
+                      <span class="tag">SignalR</span>
+                      <span class="tag">WinDbg</span>
+                      <span class="tag">PerfView</span>
+                      <span class="tag">Diagnostics</span>
+                      <span class="tag">Enterprise Support</span>
+                      <span class="tag">Mentorship</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="company-card">
+                  <img src="https://logo.clearbit.com/criticaltechworks.com" alt="Critical TechWorks">
+                  <div>
+                    <h5>Scrum Knight at Critical TechWorks</h5>
+                    <p>
+                      Served as a Scrum Master and team lead in a cross-functional product team. Facilitated Agile ceremonies, coached the team on Scrum best practices, and ensured efficient and collaborative delivery cycles.<br><br>
+              
+                      Supported backend development and frontend Angular SPA with clean code, TDD, and SOLID design principles. Engaged in pair programming, code reviews, and architecture discussions with a team of 5 engineers.<br><br>
+              
+                      Led a distributed architecture built in Java (Open SDK 1.8), JAX-RS 2.1, and JPA, using Kafka for asynchronous messaging, and PostgreSQL for persistence. CI/CD powered by Jenkins, with deployment across OpenShift environments. Actively contributed to the architecture roadmap to support Azure AKS migration initiatives.
+                    </p>
+                    <small>Nov 2020 – Jan 2022 · 1 yr 3 mos</small>
+                    <div>
+                      <span class="tag">Scrum</span>
+                      <span class="tag">Team Lead</span>
+                      <span class="tag">Angular</span>
+                      <span class="tag">Java</span>
+                      <span class="tag">Kafka</span>
+                      <span class="tag">PostgreSQL</span>
+                      <span class="tag">OpenShift</span>
+                      <span class="tag">Jenkins</span>
+                      <span class="tag">Azure AKS</span>
+                      <span class="tag">SOLID</span>
+                      <span class="tag">TDD</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="company-card">
+                  <img src="https://logo.clearbit.com/siemens.com" alt="Siemens">
+                  <div>
+                    <h5>Senior Software Developer at Siemens Lisbon Tech Hub</h5>
+                    <p>
+                      Acted as Team Lead, Tech Lead, and Software Architect within a DevOps-oriented team, guiding day-to-day development while supporting international collaboration across Germany, Croatia, and Portugal.<br><br>
+              
+                      Spearheaded the modernization of legacy VBScript-based internal tools, migrating to modern .NET Framework and .NET Core applications hosted on Azure. Led a team of 5 developers, emphasizing SOLID principles, TDD, and clean architecture.<br><br>
+              
+                      Delivered cloud-native solutions using Azure App Services, Azure Functions, Cosmos DB, SQL on Azure, and Blob Storage. Designed and deployed Q&A bots using Microsoft Bot Framework for integration with Teams and SharePoint.<br><br>
+              
+                      Facilitated internal workshops on object-oriented programming, UML design, and clean architecture to upskill teams and promote DevOps culture.
+                    </p>
+                    <small>Mar 2019 – Nov 2020 · 1 yr 9 mos</small>
+                    <div>
+                      <span class="tag">.NET Core</span>
+                      <span class="tag">C#</span>
+                      <span class="tag">Azure</span>
+                      <span class="tag">DevOps</span>
+                      <span class="tag">SOLID</span>
+                      <span class="tag">TDD</span>
+                      <span class="tag">Bot Framework</span>
+                      <span class="tag">Cosmos DB</span>
+                      <span class="tag">UML</span>
+                      <span class="tag">Cloud Migration</span>
+                      <span class="tag">Leadership</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="company-card">
+                  <img src="https://logo.clearbit.com/vision-box.com" alt="Vision-Box">
+                  <div>
+                    <h5>Senior Software Engineer at Vision-Box</h5>
+                    <p>
+                      Focused on research and development using .NET Core to enhance performance-critical areas such as WebSockets communication and serialization mechanisms.<br><br>
+              
+                      Contributed to architectural improvements through refactoring efforts, performance tuning, and high-quality C# code. Practiced SOLID principles, TDD, and clean code daily, while engaging in pair programming, code reviews, and system design discussions.<br><br>
+              
+                      As a senior member of the team, promoted engineering excellence by advocating for clean architecture, DevOps culture, and software quality awareness in a fast-paced environment, helping improve delivery outcomes and team maturity.
+                    </p>
+                    <small>Apr 2018 – Mar 2019 · 1 yr</small>
+                    <div>
+                      <span class="tag">.NET Core</span>
+                      <span class="tag">C#</span>
+                      <span class="tag">WebSockets</span>
+                      <span class="tag">Serialization</span>
+                      <span class="tag">Performance</span>
+                      <span class="tag">SOLID</span>
+                      <span class="tag">TDD</span>
+                      <span class="tag">Clean Architecture</span>
+                      <span class="tag">DevOps Culture</span>
+                      <span class="tag">R&D</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="company-card">
+                  <img src="https://logo.clearbit.com/primeit.pt" alt="PRIME IT CONSULTING">
+                  <div>
+                    <h5>Consultant Software Engineer at PRIME IT CONSULTING</h5>
+                    <p>
+                      Worked as an outsourced developer for NOS Inovação, delivering solutions across the full stack using .NET Framework and Angular. Actively participated in backend and frontend implementations aligned with NOS’s innovation strategy.<br><br>
+                      
+                      Beyond technical delivery, contributed to team development through mentoring and coaching activities focused on core technologies like MongoDB, Angular, and .NET Framework. Supported junior and mid-level developers eager to grow their skills and confidence in software engineering.
+                    </p>
+                    <small>Nov 2013 – Apr 2018 · 4 yrs 6 mos</small>
+                    <div>
+                      <span class="tag">.NET Framework</span>
+                      <span class="tag">Angular</span>
+                      <span class="tag">MongoDB</span>
+                      <span class="tag">Mentoring</span>
+                      <span class="tag">Coaching</span>
+                      <span class="tag">Full Stack</span>
+                      <span class="tag">Outsourcing</span>
+                      <span class="tag">NOS Inovação</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="company-card">
+                  <img src="https://logo.clearbit.com/nos.pt" alt="NOS Inovação">
+                  <div>
+                    <h5>Developer & Team Lead at NOS Inovação</h5>
+                    <p>
+                      Grew from developer to team leader within the core platform team responsible for Set Top Box Authentication and Authorization systems, supporting over 1 million customers and OTT applications.<br><br>
+                      
+                      Delivered and maintained critical services using ASP.NET 5.0 Web API and MVC, contributing to CI/CD pipeline implementation with Jenkins. Practiced SOLID, TDD, and clean code, and collaborated via pair programming and architecture discussions.<br><br>
+                      
+                      Led R&D and architecture of microservices migration to ASP.NET Core 1.1 with Docker, supporting real-time authorization, RabbitMQ messaging, and MongoDB persistence.<br><br>
+                      
+                      Contributed to the pilot of NOS Share, developed in partnership with Microsoft, building solutions using Azure Web App Services, Blob Storage, Media Services, and Azure Service Bus.
+                    </p>
+                    <small>Nov 2013 – Apr 2018 · 4 yrs 6 mos</small>
+                    <div>
+                      <span class="tag">.NET Core</span>
+                      <span class="tag">C#</span>
+                      <span class="tag">ASP.NET Web API</span>
+                      <span class="tag">MVC</span>
+                      <span class="tag">Azure</span>
+                      <span class="tag">RabbitMQ</span>
+                      <span class="tag">MongoDB</span>
+                      <span class="tag">Docker</span>
+                      <span class="tag">CI/CD</span>
+                      <span class="tag">Jenkins</span>
+                      <span class="tag">Leadership</span>
+                      <span class="tag">R&D</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="company-card">
+                  <img src="https://logo.clearbit.com/novabase.pt" alt="Novabase">
+                  <div>
+                    <h5>Consultant at Novabase</h5>
+                    <p>
+                      Began my professional journey with an intensive 2-week internship focused on consulting soft skills and software architecture, simulating high-pressure delivery environments. The experience covered communication, presentation, and professional relationship skills, culminating in a delivered software POC.<br><br>
+              
+                      Worked on projects for major clients across the Telco, Transport, Public Sector, and Banking industries. Involved in full-stack development of web applications using .NET (C# and VB.NET), backed by SQL Server and Oracle databases.<br><br>
+              
+                      Actively engaged in software requirements gathering (functional and non-functional), contributing to both the technical implementation and the customer-facing aspects of delivery.
+                    </p>
+                    <small>Oct 2008 – Apr 2012 · 3 yrs 7 mos</small>
+                    <div>
+                      <span class="tag">C#</span>
+                      <span class="tag">VB.NET</span>
+                      <span class="tag">.NET Framework</span>
+                      <span class="tag">SQL Server</span>
+                      <span class="tag">Oracle</span>
+                      <span class="tag">Web Applications</span>
+                      <span class="tag">Requirements Analysis</span>
+                      <span class="tag">Functional Specs</span>
+                      <span class="tag">Consulting</span>
+                      <span class="tag">Presentation Skills</span>
+                      <span class="tag">Communication</span>
+                      <span class="tag">Teamwork</span>
+                      <span class="tag">Professional Growth</span>
+                      <span class="tag">Public Sector</span>
+                      <span class="tag">Banking</span>
+                      <span class="tag">Telco</span>
+                      <span class="tag">Customer Focus</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- More companies follow same structure -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#companyCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#companyCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      
+        
+
       </div>
     </div>
 
@@ -243,7 +526,7 @@
 
         </div>
         <div class="text-center">
-          <p class="mb-0">📬 Contact me at <a href="mailto:vitorpaulino@ingenuityworks.co">Vitor Paulino</a></p>
+          <p class="mb-0">📬 Contact me at <a href="mailto:vmlepaulino@gmail.com">vmlepaulino@gmail.com</a></p>
         </div>
       </div>
     </div>
@@ -263,6 +546,8 @@
       showActiveTooltip: true
     });
   </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </body>
 </html>
