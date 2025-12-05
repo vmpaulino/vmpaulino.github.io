@@ -1,0 +1,25 @@
+{
+  "technical": [
+    ".NET", ".NET 8", ".NET Core", ".NET Framework", "ASP.NET", "ASP.NET Web API",
+    "Azure", "Azure AKS", "Azure DevOps", "Blazor", "Bot Framework", "CI/CD", "C#",
+    "Clean Architecture", "Cloud Migration", "Cosmos DB", "DevOps", "DevOps Culture",
+    "Diagnostics", "Docker", "EF Core 8", "IIS", "Java", "Jenkins", "Kafka", "MongoDB",
+    "MVC", "OpenShift", "Oracle", "PerfView", "Performance", "PostgreSQL", "RabbitMQ",
+    "Serialization", "SignalR", "SOLID", "SQL Server", "TDD", "UML", "VB.NET",
+    "Web Applications", "WebSockets", "Windows Services", "WinDbg", "WCF"
+  ],
+  "soft": [
+    "Mentoring", "Mentorship", "Coaching", "Communication", "Consulting",
+    "Presentation Skills", "Professional Growth", "Team Lead", "Leadership",
+    "Requirements Analysis", "Functional Specs", "Customer Focus", "Teamwork"
+  ],
+  "businessAreas": [
+    "Banking (BES, BCP)",
+    "Public Sector (Novabase)",
+    "Telco (Vodafone, NOS Inovação)",
+    "Product Analytics (IBT)",
+    "Manufacturing (Siemens, Critical Techworks)",
+    "Enterprise Support (Microsoft CSS)",
+    "Travel (VisionBox, EuropAssistance)"
+  ]
+}
