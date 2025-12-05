@@ -6,11 +6,17 @@ on:
       - main
       - master
       - feature/*
+    tags-ignore:
+      - 'v*'  # Ignore version tags to prevent double builds
   pull_request:
     branches:
       - main
       - master
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Version Bump and Release"]
+    types:
+      - completed
 
 permissions:
   contents: read

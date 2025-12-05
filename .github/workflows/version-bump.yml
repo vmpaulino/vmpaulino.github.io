@@ -1,0 +1,138 @@
+name: Version Bump and Release
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  version-and-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for changelog
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+      - name: Determine version bump
+        id: bump
+        run: |
+          # Get the last tag
+          LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "Last tag: $LAST_TAG"
+          
+          # Get PR number from merge commit
+          PR_NUMBER=$(git log -1 --pretty=%B | grep -oP '#\K\d+' | head -1 || echo "")
+          echo "PR Number: $PR_NUMBER"
+          
+          BUMP_TYPE=""
+          
+          # Strategy 1: Check PR labels (if PR exists)
+          if [ ! -z "$PR_NUMBER" ]; then
+            echo "Checking PR #$PR_NUMBER for labels..."
+            PR_LABELS=$(gh pr view $PR_NUMBER --json labels --jq '.labels[].name' || echo "")
+            echo "PR Labels: $PR_LABELS"
+            
+            if echo "$PR_LABELS" | grep -q "major"; then
+              BUMP_TYPE="major"
+              echo "Found 'major' label on PR"
+            elif echo "$PR_LABELS" | grep -q "minor"; then
+              BUMP_TYPE="minor"
+              echo "Found 'minor' label on PR"
+            elif echo "$PR_LABELS" | grep -q "patch"; then
+              BUMP_TYPE="patch"
+              echo "Found 'patch' label on PR"
+            fi
+          fi
+          
+          # Strategy 2: Analyze commit messages (if no label found)
+          if [ -z "$BUMP_TYPE" ]; then
+            echo "No PR label found, analyzing commit messages..."
+            COMMITS=$(git log $LAST_TAG..HEAD --pretty=%B)
+            
+            if echo "$COMMITS" | grep -qE "BREAKING CHANGE:|^[a-z]+\!:"; then
+              BUMP_TYPE="major"
+              echo "Found BREAKING CHANGE in commits"
+            elif echo "$COMMITS" | grep -qE "^feat(\(.+\))?:"; then
+              BUMP_TYPE="minor"
+              echo "Found 'feat:' in commits"
+            elif echo "$COMMITS" | grep -qE "^fix(\(.+\))?:"; then
+              BUMP_TYPE="patch"
+              echo "Found 'fix:' in commits"
+            else
+              BUMP_TYPE="patch"
+              echo "No conventional commit found, defaulting to patch"
+            fi
+          fi
+          
+          echo "bump_type=$BUMP_TYPE" >> $GITHUB_OUTPUT
+          echo "Final decision: $BUMP_TYPE bump"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          
+      - name: Bump version
+        id: version
+        run: |
+          # Get current version
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
+          echo "Current version: $CURRENT_VERSION"
+          
+          # Bump version
+          npm version ${{ steps.bump.outputs.bump_type }} -m "chore: bump version to %s [skip ci]"
+          
+          # Get new version
+          NEW_VERSION=$(node -p "require('./package.json').version")
+          echo "New version: $NEW_VERSION"
+          echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          
+      - name: Generate changelog
+        id: changelog
+        run: |
+          LAST_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
+          
+          if [ -z "$LAST_TAG" ]; then
+            CHANGELOG="Initial release"
+          else
+            CHANGELOG=$(git log $LAST_TAG..HEAD --pretty=format:"- %s" --no-merges)
+          fi
+          
+          echo "changelog<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGELOG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          
+      - name: Push version bump and tag
+        run: |
+          git push origin HEAD:${{ github.ref_name }}
+          git push --tags
+          
+      - name: Create GitHub Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          release_name: Release v${{ steps.version.outputs.version }}
+          body: |
+            ## Changes in v${{ steps.version.outputs.version }}
+            
+            ${{ steps.changelog.outputs.changelog }}
+            
+            **Version bump type:** ${{ steps.bump.outputs.bump_type }}
+          draft: false
+          prerelease: false
