@@ -4,7 +4,8 @@
   "description": "Data-driven portfolio website with TypeScript",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc && node scripts/copy-assets.js",
+    "validate": "node scripts/validate-json.js",
+    "build": "npm run validate && tsc && node scripts/copy-assets.js",
     "watch": "tsc --watch",
     "clean": "node -e \"require('fs').rmSync('dist', {recursive: true, force: true})\"",
     "test": "npm run build && http-server dist -p 8080"

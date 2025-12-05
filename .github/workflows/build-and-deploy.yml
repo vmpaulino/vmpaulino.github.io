@@ -37,6 +37,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
+      - name: Validate JSON data files
+        run: npm run validate
+        
       - name: Build TypeScript
         run: npm run build
         
