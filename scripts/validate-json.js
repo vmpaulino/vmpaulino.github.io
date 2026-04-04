@@ -58,7 +58,7 @@ jsonFiles.forEach(file => {
       case 'experience.json':
         count = Array.isArray(data) ? data.length : 0;
         isValid = Array.isArray(data) && data.every(item => 
-          item.company && item.logo && item.title && item.description && item.period && item.tags
+          item.company && item.website && item.logo && item.title && item.description && item.period && item.tags
         );
         break;
 

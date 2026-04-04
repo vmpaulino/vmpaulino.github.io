@@ -30,7 +30,34 @@ async function loadExperience() {
     if (!response.ok) {
         throw new Error(`Failed to load experience: ${response.statusText}`);
     }
-    return response.json();
+    const experience = await response.json();
+    return experience.sort((a, b) => getExperienceStartTimestamp(b.period) - getExperienceStartTimestamp(a.period));
+}
+function getExperienceStartTimestamp(period) {
+    const match = period.match(/^([A-Za-z]{3})\s+(\d{4})/);
+    if (!match) {
+        return 0;
+    }
+    const monthMap = {
+        Jan: 0,
+        Feb: 1,
+        Mar: 2,
+        Apr: 3,
+        May: 4,
+        Jun: 5,
+        Jul: 6,
+        Aug: 7,
+        Sep: 8,
+        Oct: 9,
+        Nov: 10,
+        Dec: 11
+    };
+    const month = monthMap[match[1]];
+    const year = Number(match[2]);
+    if (month === undefined || Number.isNaN(year)) {
+        return 0;
+    }
+    return Date.UTC(year, month, 1);
 }
 async function loadSkills() {
     const response = await fetch('data/skills.json');
@@ -80,6 +107,7 @@ async function initializeApp() {
         const experienceCarouselInner = document.querySelector('#companyCarousel .carousel-inner');
         if (experienceCarouselInner) {
             experienceCarouselInner.innerHTML = renderExperience(experience);
+            resetExperienceCarouselToFirst();
             console.log('✓ Experience rendered');
         }
         const skillsRendered = renderSkills(skills);
@@ -107,6 +135,21 @@ async function initializeApp() {
     catch (error) {
         console.error('❌ Error initializing application:', error);
         alert('Failed to load content. Please check the console for details.');
+    }
+}
+function resetExperienceCarouselToFirst() {
+    const carouselElement = document.querySelector('#companyCarousel');
+    if (!carouselElement) {
+        return;
+    }
+    const items = carouselElement.querySelectorAll('.carousel-item');
+    items.forEach((item, index) => {
+        item.classList.toggle('active', index === 0);
+    });
+    const bootstrapApi = window.bootstrap;
+    if (bootstrapApi?.Carousel) {
+        const instance = bootstrapApi.Carousel.getOrCreateInstance(carouselElement);
+        instance.to(0);
     }
 }
 if (document.readyState === 'loading') {

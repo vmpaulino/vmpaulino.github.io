@@ -13,7 +13,7 @@ let html = fs.readFileSync(indexPath, 'utf8');
 
 // Replace footer with version
 html = html.replace(
-  /(<footer>\s*&copy; <script>document\.write\(new Date\(\)\.getFullYear\(\)\)<\/script> Vitor Paulino)/,
+  /(<footer[^>]*>\s*&copy; <script>document\.write\(new Date\(\)\.getFullYear\(\)\)<\/script> Vitor Paulino)/,
   `$1 &middot; v${version}`
 );
 
