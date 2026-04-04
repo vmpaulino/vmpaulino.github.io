@@ -87,9 +87,10 @@ async function initializeApp() {
                 businessAreas: skills.businessAreas.length
             }
         });
-        const articlesContainer = document.querySelector('.section:has(h2.mb-4:first-child) .row.g-4');
-        if (articlesContainer && articlesContainer.parentElement?.querySelector('h2')?.textContent === 'Articles') {
-            articlesContainer.innerHTML = renderArticles(articles);
+        const articlesCarouselInner = document.querySelector('#articlesCarousel .carousel-inner');
+        if (articlesCarouselInner) {
+            articlesCarouselInner.innerHTML = renderArticles(articles);
+            resetCarouselToFirst('#articlesCarousel');
             console.log('✓ Articles rendered');
         }
         const presentationsSection = Array.from(document.querySelectorAll('.section')).find(section => section.querySelector('h2')?.textContent === 'Presentations');
@@ -107,7 +108,7 @@ async function initializeApp() {
         const experienceCarouselInner = document.querySelector('#companyCarousel .carousel-inner');
         if (experienceCarouselInner) {
             experienceCarouselInner.innerHTML = renderExperience(experience);
-            resetExperienceCarouselToFirst();
+            resetCarouselToFirst('#companyCarousel');
             console.log('✓ Experience rendered');
         }
         const skillsRendered = renderSkills(skills);
@@ -137,8 +138,8 @@ async function initializeApp() {
         alert('Failed to load content. Please check the console for details.');
     }
 }
-function resetExperienceCarouselToFirst() {
-    const carouselElement = document.querySelector('#companyCarousel');
+function resetCarouselToFirst(carouselSelector) {
+    const carouselElement = document.querySelector(carouselSelector);
     if (!carouselElement) {
         return;
     }

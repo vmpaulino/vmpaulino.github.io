@@ -239,6 +239,26 @@ section {
   border-radius: 50%;
 }
 
+#articlesCarousel .carousel-control-prev,
+#articlesCarousel .carousel-control-next {
+  width: 46px;
+  height: 46px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  background: var(--accent);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+#articlesCarousel .carousel-control-prev {
+  left: -10px;
+}
+
+#articlesCarousel .carousel-control-next {
+  right: -10px;
+}
+
 #companyCarousel .carousel-control-prev {
   left: -10px;
 }
@@ -279,6 +299,22 @@ section {
   }
 
   #companyCarousel .carousel-control-next {
+    right: calc(50% - 58px);
+  }
+
+  #articlesCarousel .carousel-control-prev,
+  #articlesCarousel .carousel-control-next {
+    top: auto;
+    bottom: -58px;
+    transform: none;
+  }
+
+  #articlesCarousel .carousel-control-prev {
+    left: calc(50% - 58px);
+    right: auto;
+  }
+
+  #articlesCarousel .carousel-control-next {
     right: calc(50% - 58px);
   }
 }

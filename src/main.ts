@@ -122,9 +122,10 @@ async function initializeApp(): Promise<void> {
     });
 
     // Render articles
-    const articlesContainer = document.querySelector('.section:has(h2.mb-4:first-child) .row.g-4');
-    if (articlesContainer && articlesContainer.parentElement?.querySelector('h2')?.textContent === 'Articles') {
-      articlesContainer.innerHTML = renderArticles(articles);
+    const articlesCarouselInner = document.querySelector('#articlesCarousel .carousel-inner');
+    if (articlesCarouselInner) {
+      articlesCarouselInner.innerHTML = renderArticles(articles);
+      resetCarouselToFirst('#articlesCarousel');
       console.log('✓ Articles rendered');
     }
 
@@ -152,7 +153,7 @@ async function initializeApp(): Promise<void> {
     const experienceCarouselInner = document.querySelector('#companyCarousel .carousel-inner');
     if (experienceCarouselInner) {
       experienceCarouselInner.innerHTML = renderExperience(experience);
-      resetExperienceCarouselToFirst();
+      resetCarouselToFirst('#companyCarousel');
       console.log('✓ Experience rendered');
     }
 
@@ -199,8 +200,8 @@ async function initializeApp(): Promise<void> {
   }
 }
 
-function resetExperienceCarouselToFirst(): void {
-  const carouselElement = document.querySelector('#companyCarousel') as HTMLElement | null;
+function resetCarouselToFirst(carouselSelector: string): void {
+  const carouselElement = document.querySelector(carouselSelector) as HTMLElement | null;
   if (!carouselElement) {
     return;
   }
