@@ -387,81 +387,29 @@
     <div class="section">
       <div class="container">
         <h2 class="mb-4">Articles</h2>
-        <div class="row g-4">
-    
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">From Smooth to Stuck: Diagnosing .NET Systems That Choke Under Load</h5>
-                <p class="card-text">Modern .NET systems often appear healthy — low CPU, stable memory — even as users experience slowdowns. The root cause? Thread starvation, async backlog, and invisible queuing due to IO pressure, memory retention, and overworked thread pools.</p>
-                <div class="mb-2">
-                  <span class="tag">dotnet</span><span class="tag">performance</span><span class="tag">troubleshooting</span>
+        <div id="articlesCarousel" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-md-6 col-lg-6">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Loading articles...</h5>
+                      <p class="card-text">Please wait while article data is loaded.</p>
+                    </div>
+                  </div>
                 </div>
-                <p class="text-muted small">June 27, 2025 &middot; 14 min read</p>
-                <a href="https://www.linkedin.com/pulse/from-smooth-stuck-diagnosing-net-systems-choke-under-load-paulino-5cjpf/" target="_blank" class="btn btn-sm btn-outline-primary">Read Article</a>
               </div>
             </div>
           </div>
-          
-    
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">From Local Certainty to Distributed Chaos: Handling Consistency and Integrity in .NET Systems</h5>
-                <p class="card-text">In local systems, a transaction is enough to ensure consistency. In distributed systems, it isn’t. This article walks through how to evolve from simple DbContext.SaveChangesAsync() logic into robust patterns like execution strategies, the Outbox pattern, and idempotent consumers. You'll learn how to preserve integrity across retries, external calls, and scale — without relying on distributed transactions. Real .NET code included.</p>
-                <div class="mb-2">
-                  <span class="tag">dotnet</span><span class="tag">distributed</span><span class="tag">consistency</span><span class="tag">patterns</span>
-                </div>
-                <p class="text-muted small">June 14, 2025 &middot; 11 min read</p>
-                <a href="https://www.linkedin.com/pulse/from-local-certainty-distributed-chaos-handling-net-systems-paulino-g0lrf" target="_blank" class="btn btn-sm btn-outline-primary">Read Article</a>
-              </div>
-            </div>
-          </div>
-          
-    
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">From Vague Requests to Valuable Stories: A Scrum Master’s Journey in Product Discovery</h5>
-                <p class="card-text">This post captures some of what I’ve been learning while working as a Scrum Master — a role that continues to offer insights I find valuable beyond delivery, especially when bridging product understanding with technical decision-making.</p>
-                <div class="mb-2">
-                  <span class="tag">scrum</span><span class="tag">productdiscovery</span><span class="tag">agile</span>
-                </div>
-                <p class="text-muted small">April 9, 2025 &middot; 19 min read</p>
-                <a href="https://www.linkedin.com/pulse/from-vague-requests-valuable-stories-scrum-masters-journey-paulino-eagof/" target="_blank" class="btn btn-sm btn-outline-primary">Read Article</a>
-              </div>
-            </div>
-          </div>
-          
-    
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Designing with LLMs: Building a Prompt Pipeline Architecture</h5>
-                <p class="card-text">Over the past few months, we’ve seen a surge in applications that integrate Large Language Models (LLMs). While getting started with models like OpenAI’s GPT or locally hosted options like Ollama is relatively easy, building real, scalable applications with LLMs requires more than sending a prompt and waiting for a response.</p>
-                <div class="mb-2">
-                  <span class="tag">llm</span><span class="tag">architecture</span><span class="tag">promptpipeline</span>
-                </div>
-                <p class="text-muted small">April 5, 2025 &middot; 6 min read</p>
-                <a href="https://www.linkedin.com/pulse/designing-llms-building-prompt-pipeline-architecture-v%25C3%25ADtor-paulino-mu9df" target="_blank" class="btn btn-sm btn-outline-primary">Read Article</a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-6">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Manage Pull Requests</h5>
-                <p class="card-text">Pull requests is one important milestone when delivering software, especially if you are delivering software using CI/CD approach. It is a point in time where the team is able to share, learn, deliver and improve the product or the project they are delivering to the business.</p>
-                <div class="mb-2">
-                  <span class="tag">cicd</span><span class="tag">pullrequests</span><span class="tag">collaboration</span>
-                </div>
-                <p class="text-muted small">October 11, 2019 &middot; 5 min read</p>
-                <a href="https://www.linkedin.com/pulse/manage-pull-requests-v%25C3%25ADtor-paulino/" target="_blank" class="btn btn-sm btn-outline-primary">Read Article</a>
-              </div>
-            </div>
-          </div>
-          
+          <button class="carousel-control-prev" type="button" data-bs-target="#articlesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#articlesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>

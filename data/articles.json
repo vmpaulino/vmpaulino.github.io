@@ -1,5 +1,53 @@
 [
   {
+    "title": "I just wanted to blink an LED",
+    "description": "What started as a simple Raspberry Pi experiment became a practical journey through Linux, networking, and Docker deployment for .NET containers. This article walks through seven real challenges uncovered when shipping from laptop to device without cloud abstractions.",
+    "tags": ["dotnet", "raspberrypi", "docker"],
+    "date": "December 22, 2025",
+    "readTime": "9 min read",
+    "url": "https://www.linkedin.com/pulse/i-just-wanted-blink-led-v%25C3%25ADtor-paulino-vq4se/?trackingId=sxIZ3%2Be3SS6Xj8%2FfG5cocg%3D%3D"
+  },
+  {
+    "title": "Understanding Algorithmic Complexity - Part 2: From Theory to Practice",
+    "description": "Part II turns complexity theory into hands-on practice with real C# refactoring scenarios, measurable performance differences, and runnable examples. It shows how to validate Big O assumptions in real code and make better design choices as data scales.",
+    "tags": ["csharp", "algorithms", "benchmarking"],
+    "date": "November 12, 2025",
+    "readTime": "9 min read",
+    "url": "https://www.linkedin.com/pulse/understanding-algorithmic-complexity-part-2-from-theory-v%25C3%25ADtor-paulino-wtt7f/?trackingId=sxIZ3%2Be3SS6Xj8%2FfG5cocg%3D%3D"
+  },
+  {
+    "title": "Understanding Algorithmic Complexity in Everyday C#",
+    "description": "Performance issues often appear only when data and traffic grow. This article explains how algorithmic complexity shows up in everyday C# code, why clean-looking logic can degrade under load, and what to watch before simple operations become bottlenecks.",
+    "tags": ["csharp", "algorithms", "performance"],
+    "date": "November 4, 2025",
+    "readTime": "8 min read",
+    "url": "https://www.linkedin.com/pulse/understanding-algorithmic-complexity-everyday-c-v%25C3%25ADtor-paulino-nv6rf/?trackingId=sxIZ3%2Be3SS6Xj8%2FfG5cocg%3D%3D"
+  },
+  {
+    "title": "Part II - When Working Code Turns Against You",
+    "description": "This follow-up explores bugs that hide behind apparent success: async flows that stall, tasks that ignore cancellation, duplicate queries, and serialization mismatches that surface only under real production conditions. These failures are dangerous because code can look correct while quietly bending system behavior.",
+    "tags": ["dotnet", "csharp", "reliability"],
+    "date": "October 28, 2025",
+    "readTime": "8 min read",
+    "url": "https://www.linkedin.com/pulse/part-ii-when-working-code-turns-against-you-v%25C3%25ADtor-paulino-1jm1f/?trackingId=sxIZ3%2Be3SS6Xj8%2FfG5cocg%3D%3D"
+  },
+  {
+    "title": "Bugs We All Write (Part I): The Ones That Should Have Been Simple",
+    "description": "Most costly bugs are not complex; they are small mistakes hidden in code that looked correct at first glance. This article explores why snippet-driven and AI-assisted coding can amplify these issues when we skip understanding the why behind the code.",
+    "tags": ["bugs", "codequality", "aidevelopment"],
+    "date": "October 20, 2025",
+    "readTime": "7 min read",
+    "url": "https://www.linkedin.com/pulse/part-i-bugs-everyone-writes-once-v%25C3%25ADtor-paulino-dhyof/?trackingId=sxIZ3%2Be3SS6Xj8%2FfG5cocg%3D%3D"
+  },
+  {
+    "title": "The Hidden Cost of Convenience: Misusing Dependency Injection in C# Projects",
+    "description": "Shortcuts like passing IServiceProvider through layers can speed up coding in the moment, but they hide dependencies and weaken architecture. This article explains why that convenience increases complexity over time and how to keep C# systems testable, maintainable, and easier to evolve.",
+    "tags": ["csharp", "dependencyinjection", "architecture"],
+    "date": "July 21, 2025",
+    "readTime": "8 min read",
+    "url": "https://www.linkedin.com/pulse/hidden-cost-convenience-misusing-dependency-injection-v%25C3%25ADtor-paulino-lyvqf/?trackingId=Qn9JeCZXSpejHiE7j3l5eQ%3D%3D"
+  },
+  {
     "title": "From Smooth to Stuck: Diagnosing .NET Systems That Choke Under Load",
     "description": "Modern .NET systems often appear healthy — low CPU, stable memory — even as users experience slowdowns. The root cause? Thread starvation, async backlog, and invisible queuing due to IO pressure, memory retention, and overworked thread pools.",
     "tags": ["dotnet", "performance", "troubleshooting"],
