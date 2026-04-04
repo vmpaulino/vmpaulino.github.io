@@ -1,0 +1,83 @@
+[
+  {
+    "company": "Millennium bcp",
+    "website": "https://www.millenniumbcp.pt",
+    "logo": "https://www.millenniumbcp.pt/media/1nqjeztu/logo_m_180x180-1.png",
+    "title": "Software Engineering Contractor at Millennium bcp",
+    "description": "<strong>Contract · Lisbon, Portugal · Hybrid</strong><br><br>As a Software Engineering Contractor, I worked within the Architecture and Innovation Department of one of the largest banks in Portugal, contributing across multiple strategic areas.<br><br>Led the integration of new ATM services with SIBS, being responsible for requirements analysis, solution and software architecture, and delivery. This involved close collaboration with multiple internal teams to ensure alignment with core banking systems, as well as coordination with SIBS in a project management capacity. Facilitated technical discussions, addressed technological constraints, and guided architectural decisions throughout the process.<br><br>Contributed to the architecture of a document management system focused on document extraction, classification, and recognition to support business operations. Supported development teams in their daily work, helping to solve technical challenges, ensure delivery quality, manage priorities, and maintain clear visibility over ongoing issues. Worked closely with Product Owners to help define roadmaps and align delivery with business goals.<br><br>Provided cross-team support to multiple squads reporting to a Delivery Manager, including troubleshooting, architectural guidance, and performance optimization.<br><br>Also acted as a Scrum Master, working closely with Product Owners to improve backlog management, introduce effective product discovery practices, and support better planning and prioritization. Helped teams align technical discussions with business priorities to ensure efficient and focused delivery.",
+    "period": "Sep 2024 – Jan 2026 · 1 yr 5 mos",
+    "tags": [".NET Core", "Azure Kubernetes Service (AKS)", "Scrum", "SingleStore", "Solution Architecture", "C#", "Service-Oriented Architecture (SOA)", "Team Lead"]
+  },
+  {
+    "company": "Europ Assistance Portugal",
+    "website": "https://www.europ-assistance.pt",
+    "logo": "https://www.europ-assistance.pt/favicon.ico",
+    "title": "Software Engineering Lead at Europ Assistance Portugal",
+    "description": "<strong>Project 1: Uber and Bolt Integration APIs</strong><br>Led the development and integration of APIs for Uber and Bolt, ensuring seamless communication and data exchange. Managed a cross-functional team using Scrum and drove project success.<br><br><strong>Project 2: Service Provider Management Backend and Backoffice</strong><br>Directed the design and development of a robust orchestration backend integrated with Gestow APIs, leading a team of 4 from architecture through deployment.<br><br>Additionally, contributed to organization-wide SDLC standards, reviewed code, provided architecture guidance, and collaborated directly with stakeholders and partners to align delivery with business needs.",
+    "period": "Sep 2023 – Jul 2024 · 11 mos",
+    "tags": [".NET 8", "C#", "Blazor", "EF Core 8", "Azure DevOps", "RabbitMQ", "Windows Services", "Scrum", "Architecture", "Team Lead"]
+  },
+  {
+    "company": "Microsoft",
+    "website": "https://www.microsoft.com",
+    "logo": "https://www.microsoft.com/favicon.ico",
+    "title": "Developer Support Engineer at Microsoft",
+    "description": "Provided expert-level support for over 200 technical cases (including 50 escalations) involving IIS, WCF, ASP.NET, and SignalR — among Microsoft's top enterprise clients. Delivered root-cause analysis and resolution for critical incidents within SLA, collaborating across teams.<br><br>Leveraged advanced tools like <strong>WinDbg</strong> (with MEX, SOSEX, NetExt), <strong>PerfView</strong>, and log diagnostics to solve complex server-side issues in ASP.NET and WCF applications. Diagnosed performance bottlenecks, scalability issues, and security vulnerabilities, delivering effective action plans.<br><br>Authored technical documentation, KBs, and best practices. Mentored junior engineers, significantly raising the support team's effectiveness within 3 months. Maintained a strong customer-first mindset while contributing to internal knowledge initiatives.",
+    "period": "Feb 2022 – Sep 2023 · 1 yr 8 mos",
+    "tags": [".NET", "IIS", "WCF", "ASP.NET", "SignalR", "WinDbg", "PerfView", "Diagnostics", "Enterprise Support", "Mentorship"]
+  },
+  {
+    "company": "Critical TechWorks",
+    "website": "https://www.criticaltechworks.com",
+    "logo": "https://www.criticaltechworks.com/media/11khfrdf/ctw_logo.svg",
+    "title": "Scrum Knight at Critical TechWorks",
+    "description": "Served as a Scrum Master and team lead in a cross-functional product team. Facilitated Agile ceremonies, coached the team on Scrum best practices, and ensured efficient and collaborative delivery cycles.<br><br>Supported backend development and frontend Angular SPA with clean code, TDD, and SOLID design principles. Engaged in pair programming, code reviews, and architecture discussions with a team of 5 engineers.<br><br>Led a distributed architecture built in Java (Open SDK 1.8), JAX-RS 2.1, and JPA, using Kafka for asynchronous messaging, and PostgreSQL for persistence. CI/CD powered by Jenkins, with deployment across OpenShift environments. Actively contributed to the architecture roadmap to support Azure AKS migration initiatives.",
+    "period": "Nov 2020 – Jan 2022 · 1 yr 3 mos",
+    "tags": ["Scrum", "Team Lead", "Angular", "Java", "Kafka", "PostgreSQL", "OpenShift", "Jenkins", "Azure AKS", "SOLID", "TDD"]
+  },
+  {
+    "company": "Siemens",
+    "website": "https://www.siemens.com",
+    "logo": "https://www.siemens.com/favicon.ico",
+    "title": "Senior Software Developer at Siemens Lisbon Tech Hub",
+    "description": "Acted as Team Lead, Tech Lead, and Software Architect within a DevOps-oriented team, guiding day-to-day development while supporting international collaboration across Germany, Croatia, and Portugal.<br><br>Spearheaded the modernization of legacy VBScript-based internal tools, migrating to modern .NET Framework and .NET Core applications hosted on Azure. Led a team of 5 developers, emphasizing SOLID principles, TDD, and clean architecture.<br><br>Delivered cloud-native solutions using Azure App Services, Azure Functions, Cosmos DB, SQL on Azure, and Blob Storage. Designed and deployed Q&A bots using Microsoft Bot Framework for integration with Teams and SharePoint.<br><br>Facilitated internal workshops on object-oriented programming, UML design, and clean architecture to upskill teams and promote DevOps culture.",
+    "period": "Mar 2019 – Nov 2020 · 1 yr 9 mos",
+    "tags": [".NET Core", "C#", "Azure", "DevOps", "SOLID", "TDD", "Bot Framework", "Cosmos DB", "UML", "Cloud Migration", "Leadership"]
+  },
+  {
+    "company": "Vision-Box",
+    "website": "https://www.vision-box.com",
+    "logo": "https://www.vision-box.com/favicon.ico",
+    "title": "Senior Software Engineer at Vision-Box",
+    "description": "Focused on research and development using .NET Core to enhance performance-critical areas such as WebSockets communication and serialization mechanisms.<br><br>Contributed to architectural improvements through refactoring efforts, performance tuning, and high-quality C# code. Practiced SOLID principles, TDD, and clean code daily, while engaging in pair programming, code reviews, and system design discussions.<br><br>As a senior member of the team, promoted engineering excellence by advocating for clean architecture, DevOps culture, and software quality awareness in a fast-paced environment, helping improve delivery outcomes and team maturity.",
+    "period": "Apr 2018 – Mar 2019 · 1 yr",
+    "tags": [".NET Core", "C#", "WebSockets", "Serialization", "Performance", "SOLID", "TDD", "Clean Architecture", "DevOps Culture", "R&D"]
+  },
+  {
+    "company": "PRIME IT CONSULTING",
+    "website": "https://www.primeit.pt",
+    "logo": "https://www.primeit.pt/public/imgs/id/favicon.ico",
+    "title": "Consultant Software Engineer at PRIME IT CONSULTING",
+    "description": "Worked as an outsourced developer for NOS Inovação, delivering solutions across the full stack using .NET Framework and Angular. Actively participated in backend and frontend implementations aligned with NOS's innovation strategy.<br><br>Beyond technical delivery, contributed to team development through mentoring and coaching activities focused on core technologies like MongoDB, Angular, and .NET Framework. Supported junior and mid-level developers eager to grow their skills and confidence in software engineering.",
+    "period": "Nov 2013 – Apr 2018 · 4 yrs 6 mos",
+    "tags": [".NET Framework", "Angular", "MongoDB", "Mentoring", "Coaching", "Full Stack"]
+  },
+  {
+    "company": "NOS Inovação",
+    "website": "https://www.nos.pt",
+    "logo": "https://www.nos.pt/etc.clientlibs/nos/clientlibs/clientlib-site/resources/favicons/favicon.png",
+    "title": "Developer & Team Lead at NOS Inovação",
+    "description": "Grew from developer to team leader within the core platform team responsible for Set Top Box Authentication and Authorization systems, supporting over 1 million customers and OTT applications.<br><br>Delivered and maintained critical services using ASP.NET 5.0 Web API and MVC, contributing to CI/CD pipeline implementation with Jenkins. Practiced SOLID, TDD, and clean code, and collaborated via pair programming and architecture discussions.<br><br>Led R&D and architecture of microservices migration to ASP.NET Core 1.1 with Docker, supporting real-time authorization, RabbitMQ messaging, and MongoDB persistence.<br><br>Contributed to the pilot of NOS Share, developed in partnership with Microsoft, building solutions using Azure Web App Services, Blob Storage, Media Services, and Azure Service Bus.",
+    "period": "Nov 2013 – Apr 2018 · 4 yrs 6 mos",
+    "tags": [".NET Core", "C#", "ASP.NET Web API", "MVC", "Azure", "RabbitMQ", "MongoDB", "Docker", "CI/CD", "Jenkins", "Leadership", "R&D"]
+  },
+  {
+    "company": "Novabase",
+    "website": "https://www.novabase.com",
+    "logo": "https://www.novabase.com/favicon.ico",
+    "title": "Consultant at Novabase",
+    "description": "Began my professional journey with an intensive 2-week internship focused on consulting soft skills and software architecture, simulating high-pressure delivery environments. The experience covered communication, presentation, and professional relationship skills, culminating in a delivered software POC.<br><br>Worked on projects for major clients across the Telco, Transport, Public Sector, and Banking industries. Involved in full-stack development of web applications using .NET (C# and VB.NET), backed by SQL Server and Oracle databases.<br><br>Actively engaged in software requirements gathering (functional and non-functional), contributing to both the technical implementation and the customer-facing aspects of delivery.",
+    "period": "Oct 2008 – Apr 2012 · 3 yrs 7 mos",
+    "tags": ["C#", "VB.NET", ".NET Framework", "SQL Server", "Oracle", "Web Applications", "Requirements Analysis", "Functional Specs", "Consulting", "Presentation Skills", "Communication", "Teamwork", "Professional Growth", "Public Sector", "Banking", "Telco", "Customer Focus"]
+  }
+]

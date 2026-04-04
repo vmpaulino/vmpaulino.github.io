@@ -1,0 +1,40 @@
+
+Europ Assistance Portugal
+SITE	
+OG	https://www.europ-assistance.com/wp-content/uploads/2025/07/Europ-Assistance-Main-Image.webp
+ICON	https://www.europ-assistance.com/wp-content/uploads/2025/12/EA-ICON-2026-150x150.webp
+
+Microsoft
+SITE	
+OG	
+ICON	
+
+Critical TechWorks
+SITE	
+OG	/media/jqkb2gvk/ctw_logo.png
+ICON	
+
+Siemens
+SITE	
+OG	https://images.sw.cdn.siemens.com/siemens-disw-assets/public/Y2FnRgpo3feg0cubFQRWa/en-US/audi-factory-floor-og-1200x630.jpg?auto=format,compress&fit=crop&crop=faces,edges&w=1200&h=630&q=60
+ICON	
+
+Vision-Box
+SITE	
+OG	https://amadeus.com/content/dam/amadeuswebevo/brand/amadeus/colors/sky/gradient/desktop/sky-gradient-arrow-right-desktop.jpg
+ICON	
+
+PRIME IT CONSULTING
+SITE	
+OG	https://www.primeit.pt/public/uploads/2015/06/Screenshot-2018-10-30-at-18.03.34.png
+ICON	
+
+NOS Inovacao
+SITE	
+OG	
+ICON	/etc.clientlibs/nos/clientlibs/clientlib-site/resources/favicons/favicon.ico
+
+Novabase
+SITE	
+OG	
+ICON	

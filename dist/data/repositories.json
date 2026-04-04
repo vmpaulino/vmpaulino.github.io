@@ -1,0 +1,32 @@
+[
+  {
+    "title": "BlobSyncer",
+    "description": "BlobSyncer.Azure.BlobStorage is a tool designed to download files from Azure Blob Storage and store them in the filesystem. It is structured to support additional syncing features in the future, allowing files to be synced to another Blob Storage using DestinationHandlers.",
+    "url": "https://github.com/vpaulino/blobsyncer"
+  },
+  {
+    "title": "Dotnet Performance",
+    "description": "This repository contains a set of code samples on how to use .NET performance type System and the C# Language to implement performant code.",
+    "url": "https://github.com/vpaulino/dotnetperformance"
+  },
+  {
+    "title": "weatherforecastspa ( on steroids)",
+    "description": "this project consists on the presentation of several Microsoft .Net technologies and sdks on how to use them to build reactive UIs. This POC continues the weatherforecast angular template from visual studio.",
+    "url": "https://github.com/vpaulino/dotnetperformance"
+  },
+  {
+    "title": "Identity Provider",
+    "description": "A minimal Identity Provider built in ASP.NET Core to explore and understand OAuth2 and OpenID Connect flows, including Authorization Code and On-Behalf-Of.",
+    "url": "https://github.com/vpaulino/identityprovider"
+  },
+  {
+    "title": "Invoices Management",
+    "description": "this is an application that runs Periodically to extract invoices from my gmail account to a specific disk location.",
+    "url": "https://github.com/vpaulino/identityprovider"
+  },
+  {
+    "title": "Libraries To Infrastructure",
+    "description": "This solution groups a set of projects that are common used accross diferent types of business solutions to use infrastructure or services.",
+    "url": "https://github.com/vpaulino/infrastructure"
+  }
+]

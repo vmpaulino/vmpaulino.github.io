@@ -1,0 +1,42 @@
+[
+  {
+    "title": "From Smooth to Stuck: Diagnosing .NET Systems That Choke Under Load",
+    "description": "Modern .NET systems often appear healthy — low CPU, stable memory — even as users experience slowdowns. The root cause? Thread starvation, async backlog, and invisible queuing due to IO pressure, memory retention, and overworked thread pools.",
+    "tags": ["dotnet", "performance", "troubleshooting"],
+    "date": "June 27, 2025",
+    "readTime": "14 min read",
+    "url": "https://www.linkedin.com/pulse/from-smooth-stuck-diagnosing-net-systems-choke-under-load-paulino-5cjpf/"
+  },
+  {
+    "title": "From Local Certainty to Distributed Chaos: Handling Consistency and Integrity in .NET Systems",
+    "description": "In local systems, a transaction is enough to ensure consistency. In distributed systems, it isn't. This article walks through how to evolve from simple DbContext.SaveChangesAsync() logic into robust patterns like execution strategies, the Outbox pattern, and idempotent consumers. You'll learn how to preserve integrity across retries, external calls, and scale — without relying on distributed transactions. Real .NET code included.",
+    "tags": ["dotnet", "distributed", "consistency", "patterns"],
+    "date": "June 14, 2025",
+    "readTime": "11 min read",
+    "url": "https://www.linkedin.com/pulse/from-local-certainty-distributed-chaos-handling-net-systems-paulino-g0lrf"
+  },
+  {
+    "title": "From Vague Requests to Valuable Stories: A Scrum Master's Journey in Product Discovery",
+    "description": "This post captures some of what I've been learning while working as a Scrum Master — a role that continues to offer insights I find valuable beyond delivery, especially when bridging product understanding with technical decision-making.",
+    "tags": ["scrum", "productdiscovery", "agile"],
+    "date": "April 9, 2025",
+    "readTime": "19 min read",
+    "url": "https://www.linkedin.com/pulse/from-vague-requests-valuable-stories-scrum-masters-journey-paulino-eagof/"
+  },
+  {
+    "title": "Designing with LLMs: Building a Prompt Pipeline Architecture",
+    "description": "Over the past few months, we've seen a surge in applications that integrate Large Language Models (LLMs). While getting started with models like OpenAI's GPT or locally hosted options like Ollama is relatively easy, building real, scalable applications with LLMs requires more than sending a prompt and waiting for a response.",
+    "tags": ["llm", "architecture", "promptpipeline"],
+    "date": "April 5, 2025",
+    "readTime": "6 min read",
+    "url": "https://www.linkedin.com/pulse/designing-llms-building-prompt-pipeline-architecture-v%C3%ADtor-paulino-mu9df"
+  },
+  {
+    "title": "Manage Pull Requests",
+    "description": "Pull requests is one important milestone when delivering software, especially if you are delivering software using CI/CD approach. It is a point in time where the team is able to share, learn, deliver and improve the product or the project they are delivering to the business.",
+    "tags": ["cicd", "pullrequests", "collaboration"],
+    "date": "October 11, 2019",
+    "readTime": "5 min read",
+    "url": "https://www.linkedin.com/pulse/manage-pull-requests-v%C3%ADtor-paulino/"
+  }
+]

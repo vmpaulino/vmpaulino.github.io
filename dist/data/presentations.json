@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Clean Code",
+    "description": "Presentation with fundamentals content about how to write code full of rules of thumb that should be considered when writing code to be maintanable and shared across multiple developers",
+    "tags": ["cleancode", "bestpractices"],
+    "url": "https://github.com/vpaulino/presentations/blob/main/CleanCode.pdf"
+  },
+  {
+    "title": "Padrões de Desenho",
+    "description": "Presentation with fundamentals content about the importance to exist design patterns.",
+    "tags": ["designpatterns", "bestpractices"],
+    "url": "https://github.com/vpaulino/presentations/blob/main/CleanCode.pdf"
+  },
+  {
+    "title": "DevOps",
+    "description": "Presentation with fundamentals about devops culture and what is part of that culture",
+    "tags": ["devops", "bestpractices"],
+    "url": "https://github.com/vpaulino/presentations/blob/main/Devops.pdf"
+  },
+  {
+    "title": "Message Pack",
+    "description": "Presentation with details about what protocol is this and how does it work",
+    "tags": ["messagepack", "protocols"],
+    "url": "https://github.com/vpaulino/presentations/blob/main/MessagePack.pdf"
+  },
+  {
+    "title": "From Monolith to Microservices",
+    "description": "Presentation about the jorney, what are the painpoints, considerations to take and how to approach with an evolving architecture design",
+    "tags": ["microservices", "awareness", "architecture"],
+    "url": "https://github.com/vpaulino/presentations/blob/main/MonolithToMicroservices-TheJourney.pdf"
+  },
+  {
+    "title": "From Monolith to Serverless",
+    "description": "Presentation about the jorney, how to transform your application from monolith to reach serverless architecture style",
+    "tags": ["microservices", "serverless", "architecture"],
+    "url": "https://github.com/vpaulino/presentations/blob/main/MonolithToServerless.pdf"
+  }
+]
